@@ -18,4 +18,10 @@ class ClientController extends Controller
 
         return response()->json($client);
     }
+
+    public function getClient($id) {
+        $client = Client::find($id);
+
+        return response()->json($client);
+    }
 }
